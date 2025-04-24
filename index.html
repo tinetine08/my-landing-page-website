@@ -1,0 +1,332 @@
+<!DOCTYPE>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Bloom &amp; Blossom - Flower Shop
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Great Vibes', cursive;
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-b from-pink-50 via-white to-pink-50 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="flex items-center space-x-2" href="#">
+     <img alt="Pink flower icon representing Bloom &amp; Blossom logo" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/5d8566d2-4d30-407a-531e-b0d5abb45fa6.jpg" width="40"/>
+     <span class="text-2xl font-semibold text-pink-600">
+      Bloom &amp; Blossom
+     </span>
+    </a>
+    <ul class="hidden md:flex space-x-8 text-pink-700 font-semibold">
+     <li>
+      <a class="hover:text-pink-900 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-pink-900 transition" href="#shop">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-pink-900 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-pink-900 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden text-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-white px-6 pb-4" id="mobile-menu">
+    <ul class="space-y-4 text-pink-700 font-semibold">
+     <li>
+      <a class="block hover:text-pink-900 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-pink-900 transition" href="#shop">
+       Shop
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-pink-900 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-pink-900 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto px-6 py-16 md:py-24 gap-12" id="home">
+   <div class="md:w-1/2 text-center md:text-left">
+    <h1 class="text-5xl md:text-6xl text-pink-700 font-bold leading-tight mb-4">
+     Fresh Flowers, Delivered with Love
+    </h1>
+    <p class="text-pink-600 text-lg md:text-xl mb-8 max-w-md mx-auto md:mx-0">
+     Discover the beauty of nature with our handpicked bouquets and floral arrangements for every occasion.
+    </p>
+    <a class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition" href="#shop">
+     Shop Now
+    </a>
+   </div>
+   <div class="md:w-1/2">
+    <img alt="Beautiful bouquet of mixed flowers in a glass vase with soft natural lighting" class="rounded-lg shadow-lg mx-auto md:mx-0" height="400" src="https://storage.googleapis.com/a1aa/image/1ae88d18-a0ef-4fd7-b58c-28ce8fca2319.jpg" width="600"/>
+   </div>
+  </section>
+  <!-- Featured Collections -->
+  <section class="bg-white py-16" id="shop">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl text-pink-700 font-semibold text-center mb-12">
+     Our Collections
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img alt="Bouquet of red and pink roses arranged elegantly with green leaves" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/fad7eba1-b7c5-457a-b990-eee42644d63a.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-pink-700 mb-2">
+        Roses Collection
+       </h3>
+       <p class="text-pink-600 mb-4">
+        Classic and romantic roses for every special moment.
+       </p>
+       <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition w-full">
+        Shop Roses
+       </button>
+      </div>
+     </div>
+     <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img alt="Bright yellow sunflowers arranged in a rustic woven basket with green leaves" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/697823f2-7e0c-4fd8-7d33-91b0c5e71ab5.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-pink-700 mb-2">
+         Sunflowers
+       </h3>
+       <p class="text-pink-600 mb-4">
+         Bring sunshine indoors with our vibrant sunflowers.
+       </p>
+       <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition w-full">
+         Shop Sunflowers
+       </button>
+       </div>
+       </div>
+       <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+        <img alt="Elegant bouquet of white and pink lilies with lush green foliage" class="w-full h-48 object-cover" height="300"src="https://storage.googleapis.com/a1aa/image/7fc03bd7-c2fe-4edd-e6cd-9570adb22f52.jpg" width="400"/>
+        <div class="p-4">
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+                Lilies
+            </h3>
+            <p class="text-pink-600 mb-4">
+                Graceful lilies perfect for celebrations and sympathy.
+            </p>
+            <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition w-full">
+                Shop Lilies
+            </button>
+        </div>
+    </div>
+    <div class="bg-pink-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+        <img alt="Colorful mixed wildflowers bouquet with daisies,lavander, and greenery" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/3d44b594-9148-4c84-2e3c-ba8475b4252f.jpg" with="400"/>
+        <div class="p-4">
+         <h3 class="text-xl font-semibold text-pink-700 mb-2">
+            Wildflowers
+         </h3>
+         <p class="text-pink-600 mb-4">
+            Natural and rustic wildflower bouquets full of charm.
+         </p>
+         <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Shop Wildflowers
+         </button>
+    </div>
+   </div>
+  </div>
+ </div>
+  </section> 
+  <!-- Why Choose Us -->
+   <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl text-pink-700 font-semibold text-center mb-12">
+        Why Choose Bloom &amp; Blossom?
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-seedling fa-4x text-pink-500">
+        </i>
+        <h3 class="text-2xl font-semibold text-pink-700">
+            Freshness Guaranteed
+        </h3>
+        <p class="text-pink-600 max-w-xs">
+            We source our flowers daily to ensure you receive the freshest blooms possible.
+        </p>
+      </div>
+      <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-truck fa-4x text-pink-500">
+        </i>
+        <h3 class="text-2xl font-semibold text-pink-700">
+            Fast &amp; Reliable Delivery
+        </h3>
+        <p class="text-pink-600 max-w-xs">
+        Same-day delivery available in your area to keep your flowers vibrant and fresh.
+    </p>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+        <i class="fas fa-heart fa-4x text-pink-500">
+        </i>
+        <h3 class="text-2xl font-semibold text-pink-700">
+            Handcrafted Arrangements
+        </h3>
+        <p class="text-pink-600 max-w-xs">
+            Each bouquet is carefully designed by expert florist with love and care.
+        </p>    
+    </div>
+   </div>
+ </section>
+ <!-- Testimonials -->
+ <section class="bg-pink-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl text-pink-700 font-semibold text-center mb-12">
+            What Our Customers Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="bg-white rounded-lg shadow-md p-8 flex-col items-center text-center">
+                <img alt="Portrait of smilling woman with long black hair and blue eyes" class="rounded-full mb-4" height="80" src="https://img.freepik.com/premium-photo/woman-with-dark-hair-blue-eyes-smiles-camera_855221-2447.jpg" width="80"/>
+                <p class="text-pink-600 italic mb-4">
+                    "The roses I ordered were stunning and lasted for weeks! Delivery was prompt and the packaging was beautiful."
+                </p>
+                <h3 class="text-pink-700 font-semibold">
+                    Sienna F.
+                </h3>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center">
+                <img alt="Portrait of smilling man with short black hair and glasses" class="rounded-full mb-4" height="80" src="https://gallaudet.edu/wp-content/uploads/2024/05/Joseph-C-Hill-1024x906.jpg" width="80"/>
+                <p class="text-pink-600 italic mb-4">
+                    "I love the wildflower bouquet! It brought so much color and joy to my home. Highly recommend Bloom &amp; Blossom."
+                </p>
+                <h3 class="text-pink-700 font-semibold">
+                    Gerald V.
+                </h3>
+               </div>
+            <div class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center">
+                <img alt="Portrait of smilling woman with short brown hair" class="rounded-full mb-4" height="80" src="https://img.freepik.com/premium-photo/portrait-smiling-women-short-brown-hair_35752-1311.jpg" width="80"/>
+                <p class="text-pink-600 italic mb-4">
+                    "The lilies arrangement was perfect for my mom's birthday. Beautiful flowers and excellent customer service."
+                </p>
+                <h3 class="text-pink-700 font-semibold">
+                    Olivia D.
+                </h3>
+               </div>
+              </div>
+             </div>
+            </section>
+<!-- About Section -->            
+<section class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-12" id="about">
+    <div class="md:w-1/2">
+     <img alt="Florist arranging a colorful bouquet of flowers inside a cozy flower shop with wooden shelves" class="rounded-lg shadow-lg mx-auto md:mx-0" height="400" src="https://storage.googleapis.com/a1aa/image/2214d935-6696-4507-35c4-d591752c8e9f.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2">
+     <h2 class="text-4xl text-pink-700 font-semibold mb-6">
+      About Bloom &amp; Blossom
+     </h2>
+     <p class="text-pink-600 mb-6 leading-relaxed">
+      At Bloom &amp; Blossom, we believe flowers are nature’s art that brighten lives and express emotions. Founded in 2010, our family-owned flower shop has been dedicated to providing fresh, beautiful flowers and exceptional service to our community.
+     </p>
+     <p class="text-pink-600 mb-6 leading-relaxed">
+      Our expert florists handcraft each bouquet with care, using only the freshest blooms sourced daily. Whether you’re celebrating a special occasion or just want to brighten your day, Bloom &amp; Blossom is here to help you share the beauty of flowers.
+     </p>
+     <a class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition" href="#contact">
+      Get in Touch
+     </a>
+    </div>
+   </section>
+<!-- Contact Section -->
+<section class="bg-white py-16" id="contact">
+    <div class="max-w-7xl mx-auto px-6">
+     <h2 class="text-4xl text-pink-700 font-semibold text-center mb-12">
+      Contact Us
+     </h2>
+     <div class="max-w-3xl mx-auto">
+      <form action="#" class="space-y-6" method="POST">
+       <div>
+        <label class="block text-pink-700 font-semibold mb-2" for="name">
+         Name
+        </label>
+        <input class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+       </div>
+       <div>
+        <label class="block text-pink-700 font-semibold mb-2" for="email">
+         Email
+        </label>
+        <input class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+       </div>
+       <div>
+        <label class="block text-pink-700 font-semibold mb-2" for="message">
+         Message
+        </label>
+        <textarea class="w-full border border-pink-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+       </div>
+       <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition w-full" type="submit">
+        Send Message
+       </button>
+      </form>
+     </div>
+    </div>
+   </section>
+   <!-- Footer -->
+   <footer class="bg-pink-700 text-pink-100 py-8 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+     <p class="text-center md:text-left text-sm">
+      © 2024 Bloom &amp; Blossom. All rights reserved.
+     </p>
+     <div class="flex space-x-6 mt-4 md:mt-0">
+      <a aria-label="Facebook" class="hover:text-pink-300 transition" href="#">
+       <i class="fab fa-facebook fa-lg">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-pink-300 transition" href="#">
+       <i class="fab fa-instagram fa-lg">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-pink-300 transition" href="#">
+       <i class="fab fa-twitter fa-lg">
+       </i>
+      </a>
+      <a aria-label="Pinterest" class="hover:text-pink-300 transition" href="#">
+       <i class="fab fa-pinterest fa-lg">
+       </i>
+      </a>
+     </div>
+    </div>
+   </footer>
+   <script>
+    const menuBtn = document.getElementById('menu-btn');
+     const mobileMenu = document.getElementById('mobile-menu');
+ 
+     menuBtn.addEventListener('click', () => {
+       mobileMenu.classList.toggle('hidden');
+     });
+   </script>
+  </body>
+ </html>   
+   
+
